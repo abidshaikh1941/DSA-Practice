@@ -1,9 +1,23 @@
-import graph.DirectedAdjacencyGraph;
 import graph.UnDirectedAdjacencyGraph;
+import number.theory.NumberTheory;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        graphDriverCode();
+//        graphDriverCode();
+
+        System.out.println(NumberTheory.isPrimeNumber(3));
+        System.out.println(NumberTheory.isPrimeNumber(6));
+        System.out.println(NumberTheory.isPrimeNumber(9));
+        System.out.println(NumberTheory.isPrimeNumber(17));
+        System.out.println(NumberTheory.gcd(25,25));
+        System.out.println(NumberTheory.lcm(17,19));
+        System.out.println(NumberTheory.binaryExponentiation(2,20));
+        NumberTheory.PrimeFactorization(17);
+        NumberTheory.buildSieveOfPrimeNumbers(51, false);
+
+
     }
 
     private static void graphDriverCode() {

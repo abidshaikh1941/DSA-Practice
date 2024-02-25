@@ -44,6 +44,8 @@ public class UnDirectedAdjacencyGraph {
         }
     }
 
+    // Breadth First Search algorithm - [ queue, visited set to not visit same vertex again]
+
     public void bfs(String source) {
         System.out.println("Printing bfs... from source " + source);
         Set<String> visited = new HashSet<>();
@@ -67,6 +69,7 @@ public class UnDirectedAdjacencyGraph {
         System.out.println(" ");
     }
 
+    // Depth First Search algorithm - [ recursion, visited set to not visit same vertex again]
     public void dfs(String vertex){
         System.out.println("Printing dfs... from vertex " + vertex);
         Set<String> visited = new HashSet<>();

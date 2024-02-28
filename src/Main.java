@@ -1,12 +1,27 @@
+import binary.tree.BinaryTree;
 import graph.UnDirectedAdjacencyGraph;
 import number.theory.NumberTheory;
-
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 //        graphDriverCode();
+//        numberTheoryDriverCode();
 
+        BinaryTree binaryTree = new BinaryTree();
+        System.out.println(binaryTree.insertNode("E"));
+        System.out.println(binaryTree.insertNode("D"));
+        System.out.println(binaryTree.insertNode("F"));
+        System.out.println(binaryTree.insertNode("A"));
+        System.out.println(binaryTree.insertNode("B"));
+        System.out.println(binaryTree.insertNode("C"));
+        System.out.println(binaryTree.insertNode("Z"));
+        binaryTree.inOrderTraversal();
+        binaryTree.preOrderTraversal();
+        binaryTree.postOrderTraversal();
+        binaryTree.levelOrderTraversal();
+    }
+
+    private static void numberTheoryDriverCode() {
         System.out.println(NumberTheory.isPrimeNumber(3));
         System.out.println(NumberTheory.isPrimeNumber(6));
         System.out.println(NumberTheory.isPrimeNumber(9));
@@ -16,8 +31,6 @@ public class Main {
         System.out.println(NumberTheory.binaryExponentiation(2,20));
         NumberTheory.PrimeFactorization(17);
         NumberTheory.buildSieveOfPrimeNumbers(51, false);
-
-
     }
 
     private static void graphDriverCode() {
